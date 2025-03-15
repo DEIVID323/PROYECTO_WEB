@@ -8,6 +8,9 @@ a{display: inline-block;}
 .heading-style-2{color: #FFF; font-size: 50px; font-weight: 900; line-height: 50px; margin-bottom: 40px;}
 p{color: #FFF; font-family: Montserrat; font-size: 18px; font-style: normal; font-weight: 400; line-height: 35px;margin-bottom: 28px;}
 
+h1 {
+    color: rgb(255, 255, 1);
+}
 /* logo */
 .logo a{margin-bottom: 20px;}
 .logo a img{width: 271px;height: auto;}

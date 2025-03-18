@@ -1,8 +1,8 @@
-form {
+form{
     margin: 0 auto;
     width: 400px;
     padding: 16px;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid black;
     border-radius: 16px;
 }
 
@@ -12,60 +12,49 @@ ul {
     margin: 0;
 }
 
-form li  {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
+form li + li {
+    margin-top: 1em;
 }
 
-label {
+label{
     display: inline-block;
-    width: 100px;
+    width: 90px;
     text-align: right;
-    font-weight: bold;
 }
 
-input {
-    font-family: "Comic Sans MS", sans-serif;
-    font-size: 1em;
-    width: 250px;
-    padding: 5px;
+input{
+    font: 1em comic sans MS;
+    width: 300px;
     box-sizing: border-box;
+    border: ipx solid gray;
 }
 
-input:focus {
-    border-color: rgb(255, 0, 0);
+input :focus{ 
+    border-color: #000;
+
 }
 
-.nota {
-    font-size: 0.9em;
-    color: rgb(0, 0, 0);
-    margin-left: 100px;
+button{
+     margin-left: 5em;
 }
-
-.botom {
-    text-align: center;
-}
-
 button.submit {
     background-color: chartreuse;
-    background: linear-gradient(top, rgb(255, 196, 0), #a21bb4);
+    background: linear-gradient(top, rgb(255, 196, 0),#a21bb4 ) ;
     border: 1px solid rgb(64, 0, 255);
     border-radius: 3px;
-    box-shadow: inset 0px 2px #d3360f;
-    color: rgb(255, 0, 0);
+    box-shadow: inset 0px 2px   #d3360f;
+    color: white;
     font-weight: bold;
     padding: 6px 20px;
     text-shadow: 0px -2px 0px #0925c4;
 }
-
 button.submit:hover {
-    opacity: 0.85;
+    opacity: .85;
 }
-
 button.submit:active {
     border: 1px solid red;
-    box-shadow: 0px 0px 15px #6c4578 inset;
+    box-shadow: 0px  opx 15px #6c4578 inset;
 }
+
 
 /*averiguar expresion regular*/

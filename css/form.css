@@ -2,7 +2,7 @@ form{
     margin: 0 auto;
     width: 400px;
     padding: 16px;
-    border: 1px solid black;
+    border: 1px solid rgb(249, 3, 3);
     border-radius: 16px;
 }
 
@@ -22,15 +22,15 @@ label{
     text-align: right;
 }
 
-input{
+input {
     font: 1em comic sans MS;
     width: 300px;
     box-sizing: border-box;
-    border: ipx solid gray;
+    
 }
 
 input :focus{ 
-    border-color: #000;
+    border-color: #001dfc;
 
 }
 

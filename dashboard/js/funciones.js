@@ -1,6 +1,6 @@
 function cargarcontenido(url) {
     // Ajusta la ruta según tu estructura; por ejemplo, si login3.html está en la raíz:
-    fetch('login3')
+    fetch(url)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al cargar la página');

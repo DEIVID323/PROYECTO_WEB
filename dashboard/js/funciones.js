@@ -1,4 +1,4 @@
-function CargarContenido(url) {
+function cargarcontenido(url) {
     fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -10,7 +10,7 @@ function CargarContenido(url) {
             document.getElementById('SecContenido').innerHTML = data;
         })
         .catch(error => {
-            console.logerror('Error al cargar', error);
+            console.error('Error al cargar', error);
             document.getElementById('SecContenido').innerHTML =
                 '<h1>Error al buscar el contenido a mostrar</h1';
         });

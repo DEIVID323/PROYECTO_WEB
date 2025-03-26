@@ -148,11 +148,15 @@ img {
   align-items: center;
 }
 
-.nav__logo {
+/*.nav__logo {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  transition: color .4s;
-}
+  transition: color .4s;*/
+  .nav__logo img {
+    height: 50px;
+    width: auto; 
+  }
+  
 
 .nav__actions {
   display: flex;

@@ -8,10 +8,10 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(230, 75%, 56%);
-  --title-color: hsl(230, 75%, 15%);
+  --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(230, 12%, 40%);
-  --body-color: hsl(230, 100%, 98%);
-  --container-color: hsl(230, 100%, 97%);
+  --body-color: hsl(0, 0%, 0%);
+  --container-color: hsl(0, 100%, 97%);
   --border-color: hsl(230, 25%, 80%);
 
   /*========== Font and typography ==========*/
@@ -252,6 +252,7 @@ img {
 }
 
 /*=============== LOGIN ===============*/
+/*
 .login__form, 
 .login__group {
   display: grid;
@@ -327,8 +328,9 @@ img {
 .login__button:hover {
   box-shadow: 0 4px 24px hsla(230, 75%, 40%, .4);
 }
-
+*/
 /* Show login */
+/*
 .show-login {
   opacity: 1;
   pointer-events: initial;
@@ -336,7 +338,7 @@ img {
 
 .show-login .login__form {
   transform: translateY(0);
-}
+}*/
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */

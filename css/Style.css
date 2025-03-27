@@ -7,9 +7,9 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(230, 75%, 56%);
+ /* --first-color: hsl(230, 75%, 56%);*/
   --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(230, 12%, 40%);
+  --text-color: hsl(0, 0%, 100%);
   --body-color: hsl(0, 0%, 0%);
   --container-color: hsl(0, 0%, 0%);
   --border-color: hsl(230, 25%, 80%);
@@ -147,11 +147,20 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+nav ul li :hover {
+    border-radius: 10px;
+    background: rgba(36, 2, 2, 0.147);
+    box-shadow: 
+ 0px 0px 10px #ff0000,
+ 0px 0px 40px  #ff0000,
+ 0px 0px 60px  #ff0000;
+}
 
 /*.nav__logo {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: color .4s;*/
+  
   .nav__logo img {
     height: 50px;
     width: auto; 
@@ -174,8 +183,13 @@ img {
   transition: color .4s;
 }
 
-:is(.nav__logo, .nav__search, .nav__login, .nav__toggle, .nav__link):hover {
-  color: var(--first-color);
+:is(.nav__search, .nav__login, .nav__toggle, .nav__link):hover {
+  border-radius: 10px;
+  background: rgba(36, 2, 2, 0.147);
+  box-shadow: 
+0px 0px 10px #ff0000,
+0px 0px 40px  #ff0000,
+0px 0px 60px  #ff0000;
 }
 
 /* Navigation for mobile devices */

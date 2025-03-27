@@ -201,6 +201,7 @@ img {
   transition: color .4s;
 }
 
+
 :is(.nav__search, .nav__login, .nav__toggle, .nav__link):hover {
   position: relative;
   display: inline-block;
@@ -226,10 +227,8 @@ nav a::before {
   transition: opacity 0.3s;
 }
 
-/* Activa la animación cuando el cursor está sobre el enlace */
-nav a:hover::before {
-  opacity: 1;
-}
+:is(.nav__search, .nav__login, .nav__toggle, .nav__link):hover::before {
+  opacity: 1;}
 
 
 /* Navigation for mobile devices */
@@ -458,6 +457,21 @@ nav a:hover::before {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .search,
+  .login {
+    padding-top: 8rem;
+  }
+
+  .search__form {
+    max-width: 300px;
+  }
+
+  .search__input {
+    font-size: 14px;
+    padding: 0.8rem;
+  }
+}
 
 
 

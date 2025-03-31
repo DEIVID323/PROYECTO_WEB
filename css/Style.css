@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(/imagenes/hero-bg.jpg);
+  background-image: url(imagenes/hero-bg.jpg);
   background-repeat: no-repeat;
   background: cover;
   background-size: cover;

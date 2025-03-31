@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="pagina.css">
+    <script src="pagina.js"defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">DMC VISVARD</div>
+        <div class="header-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar..." />
+                <button id="searchButton" class="search-button">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <a href="g">
+            <button class="cta-button">Iniciar Sesion</button>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-home nav-icon"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-shop nav-icon"></i> Shop</a></li>
+            <li><a href="#"><i class="fa-solid fa-concierge-bell nav-icon"></i> Services</a></li>
+            <li><a href="#"><i class="fa-solid fa-info-circle nav-icon"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope nav-icon"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <video autoplay muted loop playsinline class="video">
+            <source src="gafas.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>BIENVENIDO A LA TIENDA DMC VISVARD</h1>
+            <p>Tu tienda unica de productos opticos!</p>
+            <a href="#" class="cta-button">Comprar ahora</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Product 1">
+                    <div class="info">
+                        <h3>Product 1</h3>
+                        <p>Description of product 1.</p>
+                        <div class="price">$99.99</div>
+                    </div>
+                    <div class="price-badge">New</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Product 2">
+                    <div class="info">
+                        <h3>Product 2</h3>
+                        <p>Description of product 2.</p>
+                        <div class="price">$89.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/3020129/pexels-photo-3020129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Product 3">
+                    <div class="info">
+                        <h3>Product 3</h3>
+                        <p>Description of product 3.</p>
+                        <div class="price">$79.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/4110337/pexels-photo-4110337.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="Product 4">
+                    <div class="info">
+                        <h3>Product 4</h3>
+                        <p>Description of product 4.</p>
+                        <div class="price">$69.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Special Promotions</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/279906/pexels-photo-279906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Promotion 1">
+                    <div class="info">
+                        <h3>Promotion 1</h3>
+                        <p>Special deal on Promotion 1.</p>
+                        <div class="price">$49.99</div>
+                    </div>
+                    <div class="price-badge">Special</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/615302/nikon-lens-zoom-optics-615302.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="Promotion 2">
+                    <div class="info">
+                        <h3>Promotion 2</h3>
+                        <p>Special deal on Promotion 2.</p>
+                        <div class="price">$39.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-testimonials">
+            <h2>What Our Customers Are Saying</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p>"Amazing service and fantastic products! Highly recommend this store."</p>
+                    <div class="author">John Doe</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The best shopping experience I've had in a long time. Will definitely come back."</p>
+                    <div class="author">Jane Smith</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Great quality products at great prices. Customer service is excellent too."</p>
+                    <div class="author">Sam Wilson</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-collections">
+            <h2>Featured Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="https://images.pexels.com/photos/1983040/pexels-photo-1983040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Collection 1">
+                    <div class="info">
+                        <h3>Collection 1</h3>
+                        <p>Explore our exclusive collection of trendy items.</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.pexels.com/photos/2797273/pexels-photo-2797273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="Collection 2">
+                    <div class="info">
+                        <h3>Collection 2</h3>
+                        <p>Discover the best deals in our summer collection.</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                        alt="Collection 3">
+                    <div class="info">
+                        <h3>Collection 3</h3>
+                        <p>Check out our new arrivals and fresh picks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-section">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <img src="https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                    alt="Blog Post 1">
+                <h3>How to Choose the Right Product</h3>
+                <p>Tips and tricks for selecting the perfect items for your needs.</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Blog Post 2">
+                <h3>Top 10 Summer Trends</h3>
+                <p>Stay ahead with the hottest trends for the upcoming season.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is your return policy?</h3>
+                <p>We offer a 30-day return policy for all products. Please contact our support for more details.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer international shipping?</h3>
+                <p>Yes, we ship worldwide. Shipping fees and delivery times vary by destination.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I track my order?</h3>
+                <p>Once your order is shipped, you'll receive a tracking number via email. Use this number to track your
+                    shipment.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">DMC VISVARD</div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-section">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-section">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-section">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="mailto:support@muhilanstore.com">support@muhilanstore.com</a></li>
+                            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                            <li><a href="#">1234 Market St, San Francisco, CA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2025 DMC VISVARD.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

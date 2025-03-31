@@ -83,7 +83,7 @@ header {
 }
 
 .search-button:hover {
-    background-color: #e64a19;
+    background-color: #000000;
     transform: scale(1.05);
 }
 
@@ -94,6 +94,41 @@ header {
     transform: translateY(-50%);
     color: #fff;
     font-size: 18px;
+}
+.cta-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cpr-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 90px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000000;
+}
+
+.cpr-button:hover {
+    background-color: #000000;
 }
 
 
@@ -222,26 +257,6 @@ nav li a:hover {
         height: 100vh; /* Altura completa de la pantalla */
         justify-content: center; /* Centra verticalmente todo el contenido */
     }
-
-
-
-.cta-button {
-    background-color: #f2f2f2;
-    color: #fff;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 16px;
-    text-decoration: none;
-    margin-top: 90px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #e64a19;
-}
 
 .main-content {
     padding: 20px;

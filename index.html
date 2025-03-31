@@ -1,148 +1,276 @@
 <!DOCTYPE html>
-   <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-      <link rel="stylesheet" href="css/Style.css">
-      <!--=============== MAIN JS ===============-->
-      <script src="/js/main.js"defer></script>
-      <title>WEB</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo"><img src="/imagenes/LOGO.png" alt="image"></a>
-
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#" class="nav__link">Inicio</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="productos.html" class="nav__link">Productos</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="error404.html" class="nav__link">Compras</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="error404.html" class="nav__link">Carrito</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="../dashboard/dashboard.html" class="nav__link">Dashboard</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="redes_sociales.html" class="nav__link">Contactenos</a>
-                  </li>
-               </ul>
-
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-
-            <div class="nav__actions">
-               <!-- Search button -->
-               <i class="ri-search-line nav__search" id="search-btn"></i>
-    
-
-               <!-- Login button -->
-               <a href="login3.html">
-               <i class="ri-user-line nav__login" id="login-btn"></i>
-               </a>
-
-               <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== SEARCH ====================-->
-      <div class="search" id="search">
-         <form action="" class="search__form">
-            <i class="ri-search-line search__icon"></i>
-            <input type="search" placeholder="¿Qué estás buscando?" class="search__input">
-         </form>
-
-         <i class="ri-close-line search__close" id="search-close"></i>
-      </div>
-
-      <!--==================== LOGIN ====================-->
-      <!--<div class="login" id="login">
-         <form action="" class="login__form">
-            <h2 class="login__title">Log In</h2>
-            
-            <div class="login__group">
-               <div>
-                  <label for="email" class="login__label">Email</label>
-                  <input type="email" placeholder="Write your email" id="email" class="login__input">
-               </div>
-               
-               <div>
-                  <label for="password" class="login__label">Password</label>
-                  <input type="password" placeholder="Enter your password" id="password" class="login__input">
-               </div>
-            </div>
-
-            <div>
-               <p class="login__signup">
-                  You do not have an account? <a href="#">Sign up</a>
-               </p>
-   
-               <a href="#" class="login__forgot">
-                  You forgot your password
-               </a>
-   
-               <button type="submit" class="login__button">Log In</button>
-            </div>
-         </form>
-
-         <i class="ri-close-line login__close" id="login-close"></i>
-      </div>-->
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <img src="imagenes/hero-bg.jpg" alt="image" class="main__bg">
-      </main>
-   </body>
-</html>
-
-
-
-
-
-
-<!--<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Style.css">
-    <title>web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/pagina.css">
+    <title>Pagina</title>
+    <script src="/js/pagina.js"defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="https://wa.me/573025269668">WhatsApp</a></li>
-
-                <li><a href="redes_sociales.html">Contactenos</a></li>
-                <li><a href="login3.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="logo">DMC VISVARD</div>
+        <div class="header-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar..." />
+                <button id="searchButton" class="search-button">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <a href="login3.html">
+            <button class="cta-button">Iniciar Sesion</button>
+            </a>
+        </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-home nav-icon"></i>Inicio</a></li>
+            <li><a href="productos.html"><i class="fa-solid fa-shop nav-icon"></i>Catalogo De Productos</a></li>
+            <li><a href="error404.html"><i class="fa-solid fa-concierge-bell nav-icon"></i>Servicios</a></li>
+            <li><a href="error404.html"><i class="fa-solid fa-info-circle nav-icon"></i>Acerca de</a></li>
+            <li><a href="redes_sociales.html"><i class="fa-solid fa-envelope nav-icon"></i>Contactenos</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <video autoplay muted loop playsinline class="video">
+            <source src="/imagenes/gafas.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>BIENVENIDO A LA TIENDA DMC VISVARD</h1>
+            <p>Tu tienda unica de productos opticos!</p>
+            <a href="productos.html" class="cpr-button">Comprar ahora</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="section">
+            <h2>Productos destacados</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/imagenes/Estuche 1.png"
+                        alt="Producto 1">
+                    <div class="info">
+                        <h3>Producto 1</h3>
+                        <p>Estuche folding.</p>
+                        <div class="price">$15.000</div>
+                    </div>
+                    <div class="price-badge">Nuevo</div>
+                </div>
+                <div class="product-card">
+                    <img src="/imagenes/C Rojo_.png"
+                        alt="Producto 2">
+                    <div class="info">
+                        <h3>Producto 2</h3>
+                        <p>Cordon elastico.</p>
+                        <div class="price">$8.000</div>
+                        <div class="price-badge">Nuevo</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/imagenes/Estuche Cafe C.png"
+                        alt="Product 3">
+                    <div class="info">
+                        <h3>Producto 3</h3>
+                        <p>Estuche cofre.</p>
+                        <div class="price">$6.000</div>
+                        <div class="price-badge">Nuevo</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/imagenes/Montura sol.png"
+                        alt="Producto 4">
+                    <div class="info">
+                        <h3>Producto 4</h3>
+                        <p>Montura sol Wandwerth.</p>
+                        <div class="price">$180.000</div>
+                        <div class="price-badge">Nuevo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Promociones especiales</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/imagenes/Estuche F Negro_.png"
+                        alt="Promocion  1">
+                    <div class="info">
+                        <h3>Promocion 1</h3>
+                        <p>Oferta especial  Promoción 1.</p>
+                        <div class="price">$12.000</div>
+                    </div>
+                    <div class="price-badge">Especial</div>
+                </div>
+                <div class="product-card">
+                    <img src="/imagenes/Estuche Rojo C.png"
+                        alt="Promocion  2">
+                    <div class="info">
+                        <h3>Promocion 2</h3>
+                        <p>Oferta especial Promoción  2.</p>
+                        <div class="price">$5.000</div>
+                    </div>
+                    <div class="price-badge">Especial</div>
+                </div>
+            </div>
+        </div>
+<!----
+        <div class="customer-testimonials">
+            <h2>What Our Customers Are Saying</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p>"Amazing service and fantastic products! Highly recommend this store."</p>
+                    <div class="author">John Doe</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The best shopping experience I've had in a long time. Will definitely come back."</p>
+                    <div class="author">Jane Smith</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Great quality products at great prices. Customer service is excellent too."</p>
+                    <div class="author">Sam Wilson</div>
+                </div>
+            </div>
+        </div>
+    --->
+        <div class="featured-collections">
+            <h2>Colecciones destacadas</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="/imagenes/Líquido Verde .png"
+                        alt="Collection 1">
+                    <div class="info">
+                        <h3>Colección 1</h3>
+                        <p>Explora nuestra colección exclusiva de artículos.</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="/imagenes/Estuche cre N 1.png"
+                        alt="Collection 2">
+                    <div class="info">
+                        <h3>Colección  2</h3>
+                        <p>Descubre las mejores ofertas de nuestra colección.</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="/imagenes/Estuche Cre A.png"
+                        alt="Collection 3">
+                    <div class="info">
+                        <h3>Colección 3</h3>
+                        <p>Vea nuestras nuevas llegadas y selecciones .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-section">
+            <h2>Últimas publicaciones del blog</h2>
+            
+            <!--<div class="blog-post">
+                <img src="https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                    alt="Blog Post 1">
+                <h3>How to Choose the Right Product</h3>
+                <p>Tips and tricks for selecting the perfect items for your needs.</p>
+            </div>
+            <div class="blog-post">
+                <img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Blog Post 2">
+                <h3>Top 10 Summer Trends</h3>
+                <p>Stay ahead with the hottest trends for the upcoming season.</p>
+            </div>
+        </div>
+ -->
+        <div class="contact-section">
+            <h2>Contáctenos</h2>
+            <p>Si tiene alguna pregunta o necesita ayuda, no dude en comunicarse con nosotros.</p>
+            <form>
+                <input type="text" placeholder="Su nombre" required>
+                <input type="email" placeholder="Su correo electronico" required>
+                <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+   
+        <div class="faq-section">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cuál es su política de devolución?</h3>
+                <p>Ofrecemos una política de devolución de 30 días para todos los productos. Para más información, contacte con nuestro equipo de soporte.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Ofrecen envíos internacionales?</h3>
+                <p>Solo ofrecemos envios en la ciudad de bogota</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo puedo rastrear mi pedido?</h3>
+                <p>Una vez enviado tu pedido, recibirás un guia por correo electrónico. Usa este número para rastrear su envío.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">DMC VISVARD</div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-section">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contactenos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-section">
+                        <h3>Servicio al cliente</h3>
+                        <ul>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Envío</a></li>
+                            <li><a href="#">Seguimiento de pedidos</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-section">
+                        <h3>Sobre nosotros</h3>
+                        <ul>
+                            <li><a href="#">Nuestra historia</a></li>
+                    </div>
+                    <div class="footer-link-section">
+                        <h3>Contáctenos</h3>
+                        <ul>
+                            <li><a href="mailto:support@muhilanstore.com">josedavidrojas323@gmail.com</a></li>
+                            <li><a href="tel:+1234567890">3232162027</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="newsletter">
+                    <h3>Suscríbete</h3>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Introduce tu correo electronico" required>
+                        <button type="submit">Suscribir</button>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2025 DMC VISVARD.</p>
+            </div>
+        </div>
+    </footer>
 </body>
-</html>-->
+</html>

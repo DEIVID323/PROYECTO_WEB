@@ -32,7 +32,8 @@ header {
 }
 
 .logo {
-
+  height: 50px;
+  width: auto; 
 }
 
 .header-content {

@@ -18,7 +18,7 @@ h3 {
 }
 
 .sidebar {
-  overflow: hidden;
+ overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -202,17 +202,12 @@ h3 {
   color: #ffffff;
   margin-right: 12px;
 }
-main {
-  display: flex;
-  height: 100vh; /* que ocupe toda la altura */
+main{
+  display: grid;
+  grid-template-columns: 250px 1fr;
 }
-#Seccontenido {
-  margin-left: 250px; /* debe ser igual al ancho del sidebar */
-  padding: 20px;
-  z-index: 1;
-  position: relative;
-  width: calc(100% - 250px);
-  background-color: black; /* o el color que quieras */
-  }
-
+#Seccontenido
+{
+  background: aqua;
+}
 

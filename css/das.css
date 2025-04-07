@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #f4f6fa;
-  --color-primary: #121926;
+  --color-bg: #383636;
+  --color-primary: #095fff;
   --color-muted: #9fa4af;
   --color-hover: #e8ecf4;
 }
@@ -202,12 +202,9 @@ h3 {
   color: #ffffff;
   margin-right: 12px;
 }
-main{
+main {
   display: grid;
-  grid-template-columns: 250px 1fr;
-}
-#Seccontenido
-{
-  background: aqua;
+  grid-template-columns: auto 1fr;
+  height: 100vh; /* altura completa */
 }
 

@@ -7,7 +7,7 @@ function cargarContenido(url) {
             return response.text();
         })
         .then(data => {
-            document.getElementById('Seccontenido').innerHTML = data;
+            document.getElementById('Seccontenido').innerHTML =`<img src="${url}" alt="Imagen cargada" style="max-width: 100%;">`;
         })
         .catch(error => {
             console.error('Error al cargar contenido:', error);

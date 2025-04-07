@@ -203,15 +203,16 @@ h3 {
   margin-right: 12px;
 }
 main {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  height: 100vh; /* altura completa */
+  display: flex;
+  height: 100vh; /* que ocupe toda la altura */
 }
-  #Seccontenido {
-    background: aqua;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 20px;
+#Seccontenido {
+  margin-left: 250px; /* debe ser igual al ancho del sidebar */
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+  width: calc(100% - 250px);
+  background-color: black; /* o el color que quieras */
   }
 
 

@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet">
     <script src="https://unpkg.com/akar-icons-fonts"></script>
-    <script src="../dashboard/js/funciones.js"defer></script>
+    <script src="js/funciones.js"defer></script>
   </head>
   <body>
+    <main>
+      <section id="secMenu">
     <aside class="sidebar">
       <div class="left">
         <img src="imagenes/LOGO.png" />
@@ -62,8 +64,10 @@
               <span>Products</span>
             </button>
             <button>
-              <i class="ai-person"></i>
-              <span>Customers</span>
+              <a onclick="cargarcontenido('login3.html')">
+                <i class="ai-person"></i>
+                <span>Usuarios</span>
+                </a>
             </button>
             <button>
               <i class="ai-open-envelope"></i>
@@ -109,4 +113,12 @@
       </div>
     </aside>
   </body>
+</section>
+
+<section id="SecContenido">
+
+
+</section>
+
+</main>
 </html>

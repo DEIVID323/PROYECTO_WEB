@@ -7,7 +7,14 @@ function cargarContenido(url) {
             return response.text();
         })
         .then(data => {
-            document.getElementById('Seccontenido').innerHTML =`<img src="${url}" alt="Imagen cargada" style="max-width: 100%;">`;
+            const extension = url.split('.').pop().toLowerCase();
+            const contenedor = document.getElementById('Seccontenido');
+
+            if (['png', 'jpg', 'jpeg', 'gif', 'webp'].includes(extension)) {
+                contenedor.innerHTML = `<img src="${url}" alt="Imagen cargada" style="max-width: 100%;">`;
+            } else {
+                contenedor.innerHTML = data;
+            }
         })
         .catch(error => {
             console.error('Error al cargar contenido:', error);

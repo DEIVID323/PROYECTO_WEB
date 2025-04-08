@@ -1,21 +1,5 @@
 :root {
   --color-bg: #ffffff;
-  main {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-  }
-  #SecContenido
-  {
-    display: flex;
-    align-items: center;      /* centrar vertical */
-    justify-content: center;  /* centrar horizontal */
-    overflow-y: auto;         /* scroll si es alto */
-    height: 100vh;            /* o auto, si prefieres */
-    position: relative;
-    padding: 20px;            /* separarlo un poco de los bordes */
-    background-color: #ef0000c2; /* color de fondo, si gustas */
-  }
-  
     --color-primary: #0059ff;
   --color-muted: #9fa4af;
   --color-hover: #e8ecf4;
@@ -223,8 +207,5 @@ main {
   display: grid;
   grid-template-columns: 250px 1fr;
 }
-#Seccontenido
-{
-  
-}
+
 

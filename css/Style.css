@@ -829,3 +829,124 @@ footer a:hover {
   font-family: "Rubik", sans-serif;
   transition: color 600ms;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .main-content, .featured-collections, .blog-section {
+    max-width: 1000px;
+    padding: 20px 10px;
+  }
+  .product-grid, .collections-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-card, .collection-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .main-content, .featured-collections, .blog-section {
+    max-width: 800px;
+  }
+  nav ul {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .product-grid, .collections-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-card, .collection-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .main-content, .featured-collections, .blog-section {
+    max-width: 100%;
+    padding: 15px 5px;
+  }
+  .footer-content, .footer-top, .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .newsletter-form input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .cta-button, .cpr-button, .newsletter-form button, .contact-section button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .product-card img, .collection-card img, .blog-post img {
+    height: 140px;
+  }
+  .main-content, .featured-collections, .blog-section, .customer-testimonials, .faq-section, .contact-section {
+    padding: 10px 2px;
+  }
+  .footer-link-section {
+    max-width: 100%;
+  }
+  .testimonial-card {
+    padding: 10px;
+  }
+  .faq-item {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-content {
+    gap: 5px;
+  }
+  .footer-logo {
+    font-size: 18px;
+  }
+  .footer-link-section h3 {
+    font-size: 14px;
+  }
+  .footer-link-section ul li {
+    font-size: 12px;
+  }
+}

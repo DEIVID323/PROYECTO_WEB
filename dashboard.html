@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="css/das.css" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-  <script src="js/funciones.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/das.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script src="js/funciones.js"></script>
 
-  <main>
-    <aside class="sidebar">
-      <div class="left">
-        <img src="imagenes/LOGO.png" />
-        <button><a href="index.html"><i class="bx bx-home"></i></a></button>
-        <button><i class="bx bx-chat"></i></button>
-        <div>
-          <button><i class="bx bx-cog"></i></button>
-          <button><a href="login3.html"><i class="bx bx-log-out"></i></a></button>
-        </div>
-      </div>
-
-      <div class="right">
-        <div class="right-inner">
-          <div class="header">
-            <h2>DISTRIBUCIONES JV</h2>
+  </head>
+  <body>
+    <main>
+      <section id="Secmenu">
+        <aside class="sidebar">
+          <div class="left">
+            <img src="imagenes/LOGO.png" />
+            <button><a href="index.html"><i class="ai-home-alt1"></i></a></button>
+            <button><i class="ai-chat-dots"></i></button>
+            <div>
+              <button><i class="ai-gear"></i></button>
+              <button><a href="login3.html"><i class="ai-link-out"></i></a></button>
+            </div>
           </div>
-          <nav>
-            <button onclick="cargarContenido('imagenes/das.png')">
-              <i class="bx bx-grid-alt"></i><span>Dashboard</span>
-            </button>
-            <button onclick="cargarContenido('productos.html')">
-              <i class="bx bx-box"></i><span>Productos</span>
-            </button>
-            <button onclick="cargarContenido('error500.html')">
-              <i class="bx bx-user"></i><span>Usuarios</span>
-            </button>
-            <button onclick="cargarContenido('error500.html')">
-              <i class="bx bx-envelope"></i><span>Mensajes</span>
-            </button>
-            <button onclick="cargarContenido('error500.html')">
-              <i class="bx bx-data"></i><span>Inventario</span>
-            </button>
-          </nav>
-        </div>
-      </div>
-    </aside>
-
-    <section id="Seccontenido">
-      <!-- Aquí se carga el contenido dinámico -->
-    </section>
-
-  </main>
-
-</body>
+            <div class="right">
+            <div class="right-inner">
+              <div class="header">
+              <h2>DISTRIBUCIONES JV</h2>
+              </div>
+              <nav>
+              <button onclick="cargarContenido('imagenes/das.png')">
+                <i class="ai-dashboard"></i>
+                <span>Dashboard</span>
+              </button>
+              <button onclick="cargarContenido('productos.html')">
+                <i class="ai-shipping-box-v1"></i>
+                <span>Productos</span>
+              </button>
+              <button onclick="cargarContenido('error500.html')">
+                <i class="ai-person"></i>
+                <span>Usuarios</span>
+              </button>
+              <button onclick="cargarContenido('error500.html')">
+                <i class="ai-open-envelope"></i>
+                <span>Mensajes</span>
+              </button>
+              <button onclick="cargarContenido('error500.html')">
+                <i class="ai-data"></i>
+                <span>Inventario</span>
+              </button>
+              </nav>
+            </div>
+            </div>
+        </aside>
+      </section>
+      <section id="Seccontenido">
+        <!-- Aquí se carga el contenido dinámico -->
+      </section>
+    </main>
+  </body>
 </html>

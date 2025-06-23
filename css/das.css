@@ -15,15 +15,12 @@ body {
   font-family: 'Poppins', sans-serif;
   background: url('fondo.jpg') no-repeat center center fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
 }
 
 main {
   display: flex;
 }
 
-/* Sidebar contenedor */
 #Secmenu {
   position: fixed;
   top: 0;
@@ -36,7 +33,10 @@ main {
   display: flex;
 }
 
-/* Sidebar contenido */
+#Secmenu.expanded {
+  width: 300px;
+}
+
 .sidebar {
   flex: 1;
   display: flex;
@@ -44,12 +44,7 @@ main {
   gap: 8px;
   border-radius: 0 18px 18px 0;
   background: var(--color-bg);
-  transition: 0.4s;
   overflow: hidden;
-}
-
-#Secmenu:hover {
-  width: 300px;
 }
 
 .sidebar button {
@@ -69,7 +64,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.4s;
 }
 
 .left {
@@ -93,7 +87,6 @@ main {
 
 .left button:hover {
   background: var(--color-hover);
-  color: #384251;
 }
 
 .left div:last-of-type {
@@ -125,7 +118,6 @@ main {
 
 .right h2 {
   font-size: 16px;
-  font-weight: 600;
 }
 
 .right nav {
@@ -141,29 +133,36 @@ main {
   width: 100%;
   height: 44px;
   font-size: 14px;
-  color: inherit;
 }
 
 .right button:hover {
   background: var(--color-hover);
-  color: #384251;
 }
 
 .right button i {
   font-size: 18px;
 }
 
-/* Contenido dinámico */
+/* Contenido */
 #Seccontenido {
   margin-left: 80px;
   padding: 20px;
   flex-grow: 1;
   transition: margin-left 0.4s ease;
   position: relative;
-  z-index: 500; /* para estar encima del fondo */
+  z-index: 500;
 }
 
-/* Cuando el sidebar se despliega */
-#Secmenu:hover + #Seccontenido {
+/* cuando se expande */
+#Secmenu.expanded + #Seccontenido {
+  margin-left: 300px;
+}
+
+/* Solo expandible por hover si no está bloqueado */
+#Secmenu:not(.locked):hover {
+  width: 300px;
+}
+
+#Secmenu:not(.locked):hover + #Seccontenido {
   margin-left: 300px;
 }

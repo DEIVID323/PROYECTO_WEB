@@ -1,16 +1,12 @@
-// Función para cargar contenido dinámico en el área central
 function cargarContenido(url) {
   fetch(url)
     .then(response => {
-      if (!response.ok) {
-        throw new Error('Error al cargar la página');
-      }
+      if (!response.ok) throw new Error('Error al cargar la página');
       return response.text();
     })
     .then(data => {
       document.getElementById('Seccontenido').innerHTML = data;
 
-      // Si es necesario, cargar CSS adicional dinámico
       let cssId = 'css-login3';
       if (!document.getElementById(cssId)) {
         let link = document.createElement('link');
@@ -27,30 +23,29 @@ function cargarContenido(url) {
     });
 }
 
-// Control de candado para bloquear/desbloquear sidebar
-let isLocked = false;
-
-function toggleSidebarLock() {
-  const sidebar = document.querySelector('.sidebar');
-  const icon = document.querySelector('#toggleLock i');
-
-  isLocked = !isLocked;
-
-  if (isLocked) {
-    sidebar.classList.add('locked');
-    icon.classList.remove('bx-lock-open');
-    icon.classList.add('bx-lock');
-  } else {
-    sidebar.classList.remove('locked');
-    icon.classList.remove('bx-lock');
-    icon.classList.add('bx-lock-open');
-  }
-}
-
-// Espera que el DOM cargue antes de asociar el evento al botón del candado
+// Control de candado y expansión
 document.addEventListener('DOMContentLoaded', () => {
   const lockButton = document.getElementById('toggleLock');
+  const sidebarContainer = document.getElementById('Secmenu');
+  const icon = document.querySelector('#toggleLock i');
+
+  let isLocked = false;
+
   if (lockButton) {
-    lockButton.addEventListener('click', toggleSidebarLock);
+    lockButton.addEventListener('click', () => {
+      isLocked = !isLocked;
+
+      if (isLocked) {
+        sidebarContainer.classList.add('expanded');
+        sidebarContainer.classList.add('locked');
+        icon.classList.remove('bx-lock-open');
+        icon.classList.add('bx-lock');
+      } else {
+        sidebarContainer.classList.remove('expanded');
+        sidebarContainer.classList.remove('locked');
+        icon.classList.remove('bx-lock');
+        icon.classList.add('bx-lock-open');
+      }
+    });
   }
 });

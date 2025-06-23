@@ -23,7 +23,7 @@ main {
   display: flex;
 }
 
-/* Sidebar */
+/* Sidebar contenedor */
 #Secmenu {
   position: fixed;
   top: 0;
@@ -31,24 +31,25 @@ main {
   bottom: 0;
   width: 80px;
   background: #fff;
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
   z-index: 1000;
+  display: flex;
 }
 
+/* Sidebar contenido */
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 80px;
   border-radius: 0 18px 18px 0;
   background: var(--color-bg);
   transition: 0.4s;
   overflow: hidden;
-  z-index: 1000;
+}
+
+#Secmenu:hover {
+  width: 300px;
 }
 
 .sidebar button {
@@ -152,20 +153,17 @@ main {
   font-size: 18px;
 }
 
-#Secmenu.expandido {
-  width: 300px;
-}
-
+/* Contenido dinámico */
 #Seccontenido {
   margin-left: 80px;
-  transition: margin-left 0.3s ease;
+  padding: 20px;
+  flex-grow: 1;
+  transition: margin-left 0.4s ease;
+  position: relative;
+  z-index: 500; /* para estar encima del fondo */
 }
 
-body.sidebar-expandido #Seccontenido {
+/* Cuando el sidebar se despliega */
+#Secmenu:hover + #Seccontenido {
   margin-left: 300px;
 }
-
-/* Elimina este bloque porque no funciona */
- /* .sidebar:hover ~ #Seccontenido {
-  margin-left: 300px;
-} */

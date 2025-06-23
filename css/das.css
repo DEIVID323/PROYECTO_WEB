@@ -21,22 +21,30 @@ main {
   display: flex;
 }
 
+/* Sidebar contenedor */
 #Secmenu {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 80px;
-  background: #fff;
+  background: var(--color-bg);
   transition: width 0.4s ease;
   z-index: 1000;
   display: flex;
 }
 
-#Secmenu.expanded {
+/* Sidebar expandido fijo con candado */
+#Secmenu.locked {
   width: 300px;
 }
 
+/* Sidebar expandible por hover solo si no está bloqueado */
+#Secmenu:not(.locked):hover {
+  width: 300px;
+}
+
+/* Sidebar contenido */
 .sidebar {
   flex: 1;
   display: flex;
@@ -143,7 +151,7 @@ main {
   font-size: 18px;
 }
 
-/* Contenido */
+/* Contenido principal */
 #Seccontenido {
   margin-left: 80px;
   padding: 20px;
@@ -153,16 +161,12 @@ main {
   z-index: 500;
 }
 
-/* cuando se expande */
-#Secmenu.expanded + #Seccontenido {
+/* Ajuste margen cuando sidebar está expandido fijo */
+#Secmenu.locked + #Seccontenido {
   margin-left: 300px;
 }
 
-/* Solo expandible por hover si no está bloqueado */
-#Secmenu:not(.locked):hover {
-  width: 300px;
-}
-
+/* Ajuste margen cuando sidebar se expande por hover */
 #Secmenu:not(.locked):hover + #Seccontenido {
   margin-left: 300px;
 }

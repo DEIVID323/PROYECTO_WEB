@@ -29,23 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const sidebarContainer = document.getElementById('Secmenu');
   const icon = document.querySelector('#toggleLock i');
 
-  let isLocked = false;
-
   if (lockButton) {
     lockButton.addEventListener('click', () => {
-      isLocked = !isLocked;
-
-      if (isLocked) {
-        sidebarContainer.classList.add('expanded');
-        sidebarContainer.classList.add('locked');
-        icon.classList.remove('bx-lock-open');
-        icon.classList.add('bx-lock');
-      } else {
-        sidebarContainer.classList.remove('expanded');
+      if (sidebarContainer.classList.contains('locked')) {
+        // Desbloquear
         sidebarContainer.classList.remove('locked');
         icon.classList.remove('bx-lock');
         icon.classList.add('bx-lock-open');
+      } else {
+        // Bloquear
+        sidebarContainer.classList.add('locked');
+        icon.classList.remove('bx-lock-open');
+        icon.classList.add('bx-lock');
       }
     });
   }
 });
+
+

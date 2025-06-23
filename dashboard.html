@@ -13,11 +13,13 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <script src="js/funciones.js"></script>
+  
   </head>
   <body>
     <main>
       <section id="Secmenu">
         <aside class="sidebar">
+          <!-- Sidebar interna -->
           <div class="left">
             <img src="imagenes/LOGO.png" />
             <button>
@@ -25,13 +27,9 @@
                 <i class="ai-home-alt1"></i>
               </a>
             </button>
-            <button>
-              <i class="ai-chat-dots"></i>
-            </button>
+            <button><i class="ai-chat-dots"></i></button>
             <div>
-              <button>
-                <i class="ai-gear"></i>
-              </button>
+              <button><i class="ai-gear"></i></button>
               <button>
                 <a href="login3.html">
                   <i class="ai-link-out"></i>
@@ -42,49 +40,23 @@
           <div class="right">
             <div class="right-inner">
               <div class="header">
-                <div>
-                  <h2>DISTRIBUCIONES JV</h2>
-                </div>
+                <div><h2>DISTRIBUCIONES JV</h2></div>
                 <i class="ai-chevron-vertical"></i>
               </div>
               <nav>
-                <button>
-                  <a onclick="cargarContenido('imagenes/das.png')">
-                    <i class="ai-dashboard"></i>
-                    <span>Dashboard</span>
-                  </a>
-                </button>
-                <button>
-                  <a onclick="cargarContenido('productos.html')">
-                    <i class="ai-shipping-box-v1"></i>
-                    <span>Productos</span>
-                  </a>
-                </button>
-                <button>
-                  <a onclick="cargarContenido('error500.html')">
-                    <i class="ai-person"></i>
-                    <span>Usuarios</span>
-                  </a>
-                </button>
-                <button>
-                  <a onclick="cargarContenido('error500.html')">
-                    <i class="ai-open-envelope"></i>
-                    <span>Mensajes</span>
-                  </a>
-                </button>
-                <button>
-                  <a onclick="cargarContenido('error500.html')">
-                    <i class="ai-data"></i>
-                    <span>Inventario</span>
-                  </a>
-                </button>
+                <button><a onclick="cargarContenido('imagenes/das.png')"><i class="ai-dashboard"></i><span>Dashboard</span></a></button>
+                <button><a onclick="cargarContenido('productos.html')"><i class="ai-shipping-box-v1"></i><span>Productos</span></a></button>
+                <button><a onclick="cargarContenido('error500.html')"><i class="ai-person"></i><span>Usuarios</span></a></button>
+                <button><a onclick="cargarContenido('error500.html')"><i class="ai-open-envelope"></i><span>Mensajes</span></a></button>
+                <button><a onclick="cargarContenido('error500.html')"><i class="ai-data"></i><span>Inventario</span></a></button>
               </nav>
             </div>
           </div>
         </aside>
       </section>
+
       <section id="Seccontenido">
-        <!-- Aquí se carga el contenido dinámico -->
+        <!-- Aquí se carga el contenido dinámico al frente y adaptado -->
       </section>
     </main>
   </body>

@@ -22,8 +22,6 @@ function cargarContenido(url) {
         '<h1>Error al buscar el contenido a mostrar</h1>';
     });
 }
-
-// Control de candado y expansión
 document.addEventListener('DOMContentLoaded', () => {
   const lockButton = document.getElementById('toggleLock');
   const sidebarContainer = document.getElementById('Secmenu');
@@ -31,19 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (lockButton) {
     lockButton.addEventListener('click', () => {
+      // Alternar clase locked
+      sidebarContainer.classList.toggle('locked');
+
+      // Cambiar icono según estado
       if (sidebarContainer.classList.contains('locked')) {
-        // Desbloquear
-        sidebarContainer.classList.remove('locked');
-        icon.classList.remove('bx-lock');
-        icon.classList.add('bx-lock-open');
-      } else {
-        // Bloquear
-        sidebarContainer.classList.add('locked');
         icon.classList.remove('bx-lock-open');
         icon.classList.add('bx-lock');
+      } else {
+        icon.classList.remove('bx-lock');
+        icon.classList.add('bx-lock-open');
       }
     });
   }
 });
-
 

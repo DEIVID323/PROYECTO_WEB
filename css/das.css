@@ -13,8 +13,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f5f5f5;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
+
 
 main {
   display: flex;
@@ -44,6 +48,7 @@ main {
   overflow: hidden;
   z-index: 1000;
 }
+
 
 
 .sidebar:hover {
@@ -152,21 +157,16 @@ main {
 }
 
 /* Contenido */
-/* Contenido */
 #Seccontenido {
-  position: relative;
-  z-index: 900;
   margin-left: 80px;
   padding: 20px;
   flex-grow: 1;
   transition: margin-left 0.4s;
-  min-height: 100vh;
-  background: #f5f5f5;
-  overflow-x: hidden;
+  background: transparent;
 }
+
 
 /* Cuando el sidebar se despliega */
 .sidebar:hover ~ #Seccontenido {
   margin-left: 300px;
-  transition: margin-left 0.4s;
 }

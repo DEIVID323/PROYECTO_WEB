@@ -19,7 +19,6 @@ body {
   padding: 0;
 }
 
-
 main {
   display: flex;
 }
@@ -29,7 +28,10 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  bottom: 0;
+  width: 80px;
+  background: #fff;
+  transition: width 0.3s ease;
   z-index: 1000;
 }
 
@@ -47,12 +49,6 @@ main {
   transition: 0.4s;
   overflow: hidden;
   z-index: 1000;
-}
-
-
-
-.sidebar:hover {
-  width: 300px;
 }
 
 .sidebar button {
@@ -156,17 +152,20 @@ main {
   font-size: 18px;
 }
 
-/* Contenido */
+#Secmenu.expandido {
+  width: 300px;
+}
+
 #Seccontenido {
   margin-left: 80px;
-  padding: 20px;
-  flex-grow: 1;
-  transition: margin-left 0.4s;
-  background: transparent;
+  transition: margin-left 0.3s ease;
 }
 
-
-/* Cuando el sidebar se despliega */
-.sidebar:hover ~ #Seccontenido {
+body.sidebar-expandido #Seccontenido {
   margin-left: 300px;
 }
+
+/* Elimina este bloque porque no funciona */
+ /* .sidebar:hover ~ #Seccontenido {
+  margin-left: 300px;
+} */

@@ -699,46 +699,7 @@ footer a:hover {
 .meta-link>span {
   color: white;
   font-family: "Rubik", sans-serif;
-  transition: color 600ms;  /* ...código existente... */
-  
-  /* Ajuste para que el contenido no quede detrás del sidebar y se adapte al ancho */
-  main {
-    display: flex;
-    min-height: 100vh;
-  }
-  
-  /* Sidebar fijo a la izquierda */
-  .sidebar {
-    width: 80px;
-    transition: width 0.4s;
-    z-index: 2;
-    position: fixed;
-    top: 24px;
-    left: 24px;
-    bottom: 28px;
-    /* ...otras propiedades existentes... */
-  }
-  
-  /* Sidebar expandido al hacer hover */
-  .sidebar:hover {
-    width: 300px;
-  }
-  
-  /* Ajuste del contenido principal para que no quede detrás del sidebar */
-  #Seccontenido {
-    flex: 1;
-    margin-left: 104px; /* 80px sidebar + 24px left */
-    transition: margin-left 0.4s;
-    z-index: 1;
-    padding: 24px;
-  }
-  
-  /* Cuando el sidebar está expandido */
-  .sidebar:hover ~ #Seccontenido {
-    margin-left: 324px; /* 300px sidebar + 24px left */
-  }
-  
-  /* ...código existente... */
+  transition: color 600ms;
 }
 
 
